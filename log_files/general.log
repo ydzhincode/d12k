@@ -1,0 +1,420 @@
+2023-08-17 01:09:12,885 INFO autoreload Watching for file changes with StatReloader
+2023-08-17 01:09:17,231 WARNING log Not Found: /
+2023-08-17 01:09:17,232 WARNING basehttp "GET / HTTP/1.1" 404 2388
+2023-08-17 01:11:36,538 WARNING log Not Found: /
+2023-08-17 01:11:36,539 WARNING basehttp "GET / HTTP/1.1" 404 2388
+2023-08-17 01:11:45,457 INFO basehttp "GET /news/ HTTP/1.1" 200 7907
+2023-08-17 01:11:47,886 INFO basehttp "GET /news/18 HTTP/1.1" 200 3417
+2023-08-17 01:12:03,511 WARNING log Not Found: /news/3515
+2023-08-17 01:12:03,513 WARNING basehttp "GET /news/3515 HTTP/1.1" 404 2664
+2023-08-17 01:17:10,196 INFO autoreload C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\newspaperproject\settings.py changed, reloading.
+2023-08-17 01:17:10,995 INFO autoreload Watching for file changes with StatReloader
+2023-08-17 01:17:33,778 WARNING log Not Found: /
+2023-08-17 01:17:33,779 WARNING basehttp "GET / HTTP/1.1" 404 2388
+2023-08-17 01:23:40,362 INFO autoreload Watching for file changes with StatReloader
+2023-08-17 01:23:42,872 WARNING log Not Found: /
+2023-08-17 01:23:42,873 WARNING basehttp "GET / HTTP/1.1" 404 179
+2023-08-17 01:23:49,730 INFO basehttp "GET /news/ HTTP/1.1" 200 7907
+2023-08-17 01:24:05,754 INFO basehttp "GET /news/17 HTTP/1.1" 200 3323
+2023-08-17 01:24:07,268 INFO basehttp "GET /news/17/edit HTTP/1.1" 200 4967
+2023-08-17 01:24:12,190 INFO basehttp "POST /news/17/edit HTTP/1.1" 302 0
+2023-08-17 01:24:12,202 INFO basehttp "GET /news/17 HTTP/1.1" 200 3323
+2023-08-17 01:24:13,205 INFO basehttp "GET /news/17/edit HTTP/1.1" 200 4976
+2023-08-17 01:24:15,381 INFO basehttp "POST /news/17/edit HTTP/1.1" 302 0
+2023-08-17 01:24:15,391 INFO basehttp "GET /news/17 HTTP/1.1" 200 3323
+2023-08-17 01:24:16,399 INFO basehttp "GET /news/17/edit HTTP/1.1" 200 4976
+2023-08-17 01:24:17,405 INFO basehttp "POST /news/17/edit HTTP/1.1" 302 0
+2023-08-17 01:24:17,411 INFO basehttp "GET /news/17 HTTP/1.1" 200 3323
+2023-08-17 01:24:18,357 INFO basehttp "GET /news/17/edit HTTP/1.1" 200 4976
+2023-08-17 01:24:19,332 INFO basehttp "POST /news/17/edit HTTP/1.1" 302 0
+2023-08-17 01:24:19,342 INFO basehttp "GET /news/17 HTTP/1.1" 200 3323
+2023-08-17 01:24:20,308 INFO basehttp "GET /news/17/edit HTTP/1.1" 200 4976
+2023-08-17 01:24:21,269 INFO basehttp "POST /news/17/edit HTTP/1.1" 302 0
+2023-08-17 01:24:21,280 INFO basehttp "GET /news/17 HTTP/1.1" 200 3323
+2023-08-17 01:24:22,081 INFO basehttp "GET /news/17/edit HTTP/1.1" 200 4976
+2023-08-17 01:24:23,215 INFO basehttp "POST /news/17/edit HTTP/1.1" 302 0
+2023-08-17 01:24:23,221 INFO basehttp "GET /news/17 HTTP/1.1" 200 3323
+2023-08-17 01:26:54,520 ERROR log Internal Server Error: /news/
+Traceback (most recent call last):
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: flatpage/default.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: flatpage/default.html
+2023-08-17 01:26:54,703 ERROR basehttp "GET /news/ HTTP/1.1" 500 145
+2023-08-17 01:27:55,058 INFO basehttp "GET /admin/ HTTP/1.1" 200 15845
+2023-08-17 01:27:58,584 INFO basehttp "POST /admin/logout/ HTTP/1.1" 200 3709
+2023-08-17 01:28:00,244 INFO basehttp "GET /admin/ HTTP/1.1" 302 0
+2023-08-17 01:28:00,265 INFO basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+2023-08-17 01:28:06,714 INFO basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2023-08-17 01:28:06,747 INFO basehttp "GET /admin/ HTTP/1.1" 200 15845
+2023-08-17 01:28:16,195 INFO basehttp "GET /admin/auth/user/ HTTP/1.1" 200 19119
+2023-08-17 01:28:16,222 WARNING log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2023-08-17 01:28:16,226 WARNING log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2023-08-17 01:28:16,227 WARNING basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-08-17 01:28:16,228 WARNING basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-08-17 01:28:16,232 INFO basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-08-17 01:28:16,407 WARNING log Not Found: /static/admin/img/search.svg
+2023-08-17 01:28:16,409 WARNING log Not Found: /static/admin/img/sorting-icons.svg
+2023-08-17 01:28:16,410 WARNING log Not Found: /static/admin/img/icon-no.svg
+2023-08-17 01:28:16,411 WARNING basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 404 179
+2023-08-17 01:28:16,411 WARNING basehttp "GET /static/admin/img/search.svg HTTP/1.1" 404 179
+2023-08-17 01:28:16,412 WARNING basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 404 179
+2023-08-17 01:28:19,261 INFO basehttp "GET /admin/auth/user/1/change/ HTTP/1.1" 200 31617
+2023-08-17 01:28:19,300 WARNING log Not Found: /static/admin/css/forms.css
+2023-08-17 01:28:19,300 WARNING basehttp "GET /static/admin/css/forms.css HTTP/1.1" 404 179
+2023-08-17 01:28:19,302 WARNING log Not Found: /static/admin/js/calendar.js
+2023-08-17 01:28:19,304 WARNING log Not Found: /static/admin/js/admin/DateTimeShortcuts.js
+2023-08-17 01:28:19,304 WARNING log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2023-08-17 01:28:19,305 WARNING basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-08-17 01:28:19,306 WARNING log Not Found: /static/admin/js/SelectBox.js
+2023-08-17 01:28:19,306 WARNING basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 404 179
+2023-08-17 01:28:19,306 WARNING basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 404 179
+2023-08-17 01:28:19,307 WARNING basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 404 179
+2023-08-17 01:28:19,309 WARNING log Not Found: /static/admin/js/SelectFilter2.js
+2023-08-17 01:28:19,310 WARNING basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 404 179
+2023-08-17 01:28:19,314 INFO basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-08-17 01:28:19,332 WARNING log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2023-08-17 01:28:19,332 WARNING basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-08-17 01:28:19,338 WARNING log Not Found: /static/admin/js/prepopulate_init.js
+2023-08-17 01:28:19,339 WARNING log Not Found: /static/admin/js/change_form.js
+2023-08-17 01:28:19,340 WARNING basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 404 179
+2023-08-17 01:28:19,340 WARNING basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 404 179
+2023-08-17 01:28:39,488 INFO basehttp "POST /admin/auth/user/1/change/ HTTP/1.1" 302 0
+2023-08-17 01:28:39,543 INFO basehttp "GET /admin/auth/user/ HTTP/1.1" 200 19360
+2023-08-17 01:28:39,557 WARNING log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2023-08-17 01:28:39,558 WARNING basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-08-17 01:28:39,559 WARNING log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2023-08-17 01:28:39,560 WARNING basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-08-17 01:28:39,566 INFO basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-08-17 01:28:39,569 WARNING log Not Found: /static/admin/img/search.svg
+2023-08-17 01:28:39,572 WARNING basehttp "GET /static/admin/img/search.svg HTTP/1.1" 404 179
+2023-08-17 01:28:39,595 WARNING log Not Found: /static/admin/img/icon-no.svg
+2023-08-17 01:28:39,596 WARNING basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 404 179
+2023-08-17 01:29:17,108 INFO basehttp "GET /news/17 HTTP/1.1" 200 3323
+2023-08-17 01:29:20,216 ERROR log Internal Server Error: /news/
+Traceback (most recent call last):
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: flatpage/default.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: flatpage/default.html
+2023-08-17 01:29:20,257 ERROR basehttp "GET /news/ HTTP/1.1" 500 145
+2023-08-17 01:31:59,706 INFO autoreload Watching for file changes with StatReloader
+2023-08-17 01:32:03,329 WARNING log Not Found: /
+2023-08-17 01:32:03,329 WARNING basehttp "GET / HTTP/1.1" 404 179
+2023-08-17 01:32:06,760 ERROR log Internal Server Error: /news/
+Traceback (most recent call last):
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: flatpage/default.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: flatpage/default.html
+2023-08-17 01:32:06,817 ERROR basehttp "GET /news/ HTTP/1.1" 500 145
+2023-08-17 01:33:10,188 INFO autoreload C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\newspaperproject\settings.py changed, reloading.
+2023-08-17 01:33:10,985 INFO autoreload Watching for file changes with StatReloader
+2023-08-17 01:33:12,860 WARNING log Not Found: /
+2023-08-17 01:33:12,861 WARNING basehttp "GET / HTTP/1.1" 404 179
+2023-08-17 01:33:15,554 ERROR log Internal Server Error: /news/
+Traceback (most recent call last):
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: flatpage/default.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: flatpage/default.html
+2023-08-17 01:33:15,648 ERROR basehttp "GET /news/ HTTP/1.1" 500 145
+2023-08-17 01:34:15,703 INFO basehttp "GET /admin/auth/user/1/change/ HTTP/1.1" 200 31646
+2023-08-17 01:34:15,718 WARNING log Not Found: /static/admin/css/forms.css
+2023-08-17 01:34:15,726 WARNING log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2023-08-17 01:34:15,726 WARNING basehttp "GET /static/admin/css/forms.css HTTP/1.1" 404 179
+2023-08-17 01:34:15,728 WARNING log Not Found: /static/admin/js/SelectFilter2.js
+2023-08-17 01:34:15,728 WARNING basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-08-17 01:34:15,730 WARNING log Not Found: /static/admin/js/calendar.js
+2023-08-17 01:34:15,731 WARNING log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2023-08-17 01:34:15,733 WARNING log Not Found: /static/admin/js/admin/DateTimeShortcuts.js
+2023-08-17 01:34:15,733 WARNING basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 404 179
+2023-08-17 01:34:15,734 WARNING basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 404 179
+2023-08-17 01:34:15,734 WARNING basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-08-17 01:34:15,736 WARNING log Not Found: /static/admin/js/SelectBox.js
+2023-08-17 01:34:15,740 WARNING basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 404 179
+2023-08-17 01:34:15,742 WARNING basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 404 179
+2023-08-17 01:34:15,742 INFO basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-08-17 01:34:15,761 WARNING log Not Found: /static/admin/js/prepopulate_init.js
+2023-08-17 01:34:15,763 WARNING log Not Found: /static/admin/js/change_form.js
+2023-08-17 01:34:15,763 WARNING basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 404 179
+2023-08-17 01:34:15,764 WARNING basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 404 179
+2023-08-17 01:34:28,457 INFO basehttp "POST /admin/auth/user/1/change/ HTTP/1.1" 302 0
+2023-08-17 01:34:28,500 INFO basehttp "GET /admin/auth/user/ HTTP/1.1" 200 19356
+2023-08-17 01:34:28,512 WARNING log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2023-08-17 01:34:28,513 WARNING log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2023-08-17 01:34:28,514 WARNING basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-08-17 01:34:28,514 WARNING basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-08-17 01:34:28,525 WARNING log Not Found: /static/admin/img/search.svg
+2023-08-17 01:34:28,525 INFO basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-08-17 01:34:28,526 WARNING basehttp "GET /static/admin/img/search.svg HTTP/1.1" 404 179
+2023-08-17 01:34:28,529 WARNING log Not Found: /static/admin/img/icon-no.svg
+2023-08-17 01:34:28,530 WARNING basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 404 179
+2023-08-17 01:34:28,540 WARNING log Not Found: /static/admin/img/sorting-icons.svg
+2023-08-17 01:34:28,540 WARNING basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 404 179
+2023-08-17 01:34:32,570 INFO basehttp "GET /admin/account/emailaddress/ HTTP/1.1" 200 17336
+2023-08-17 01:34:32,588 WARNING log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2023-08-17 01:34:32,590 WARNING log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2023-08-17 01:34:32,590 WARNING basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-08-17 01:34:32,591 WARNING basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-08-17 01:34:32,595 WARNING log Not Found: /static/admin/img/search.svg
+2023-08-17 01:34:32,596 WARNING basehttp "GET /static/admin/img/search.svg HTTP/1.1" 404 179
+2023-08-17 01:34:32,597 INFO basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-08-17 01:34:48,967 INFO basehttp "GET /admin/account/emailaddress/ HTTP/1.1" 200 17336
+2023-08-17 01:34:48,983 WARNING log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2023-08-17 01:34:48,984 WARNING log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2023-08-17 01:34:48,985 WARNING basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-08-17 01:34:48,985 WARNING basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-08-17 01:34:48,990 WARNING log Not Found: /static/admin/img/search.svg
+2023-08-17 01:34:48,990 WARNING basehttp "GET /static/admin/img/search.svg HTTP/1.1" 404 179
+2023-08-17 01:34:48,990 INFO basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-08-17 01:34:53,401 INFO basehttp "GET /admin/auth/user/ HTTP/1.1" 200 19135
+2023-08-17 01:34:53,417 WARNING log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2023-08-17 01:34:53,419 WARNING log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2023-08-17 01:34:53,419 WARNING basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-08-17 01:34:53,420 WARNING basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-08-17 01:34:53,424 WARNING log Not Found: /static/admin/img/search.svg
+2023-08-17 01:34:53,426 WARNING basehttp "GET /static/admin/img/search.svg HTTP/1.1" 404 179
+2023-08-17 01:34:53,426 INFO basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-08-17 01:34:53,461 WARNING log Not Found: /static/admin/img/icon-no.svg
+2023-08-17 01:34:53,461 WARNING basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 404 179
+2023-08-17 01:34:55,560 INFO basehttp "GET /admin/auth/group/ HTTP/1.1" 200 14551
+2023-08-17 01:34:55,574 WARNING log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2023-08-17 01:34:55,576 WARNING log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2023-08-17 01:34:55,577 WARNING basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-08-17 01:34:55,577 WARNING basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-08-17 01:34:55,586 WARNING log Not Found: /static/admin/img/search.svg
+2023-08-17 01:34:55,586 INFO basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-08-17 01:34:55,586 WARNING basehttp "GET /static/admin/img/search.svg HTTP/1.1" 404 179
+2023-08-17 01:34:58,084 INFO basehttp "GET /admin/auth/user/ HTTP/1.1" 200 19135
+2023-08-17 01:34:58,102 WARNING log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2023-08-17 01:34:58,103 WARNING log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2023-08-17 01:34:58,104 WARNING basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-08-17 01:34:58,105 WARNING basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-08-17 01:34:58,111 WARNING log Not Found: /static/admin/img/search.svg
+2023-08-17 01:34:58,111 WARNING basehttp "GET /static/admin/img/search.svg HTTP/1.1" 404 179
+2023-08-17 01:34:58,111 INFO basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-08-17 01:34:58,115 WARNING log Not Found: /static/admin/img/icon-no.svg
+2023-08-17 01:34:58,116 WARNING basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 404 179
+2023-08-17 01:35:04,231 INFO basehttp "GET /admin/auth/user/1/change/ HTTP/1.1" 200 31642
+2023-08-17 01:35:04,246 WARNING log Not Found: /static/admin/css/forms.css
+2023-08-17 01:35:04,251 WARNING log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2023-08-17 01:35:04,252 WARNING log Not Found: /static/admin/js/calendar.js
+2023-08-17 01:35:04,253 WARNING log Not Found: /static/admin/js/admin/DateTimeShortcuts.js
+2023-08-17 01:35:04,253 WARNING log Not Found: /static/admin/js/SelectBox.js
+2023-08-17 01:35:04,254 WARNING basehttp "GET /static/admin/css/forms.css HTTP/1.1" 404 179
+2023-08-17 01:35:04,255 WARNING basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-08-17 01:35:04,255 WARNING basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 404 179
+2023-08-17 01:35:04,262 WARNING log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2023-08-17 01:35:04,262 WARNING basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 404 179
+2023-08-17 01:35:04,262 WARNING basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 404 179
+2023-08-17 01:35:04,263 WARNING log Not Found: /static/admin/js/SelectFilter2.js
+2023-08-17 01:35:04,264 WARNING basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-08-17 01:35:04,267 INFO basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-08-17 01:35:04,267 WARNING basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 404 179
+2023-08-17 01:35:04,368 WARNING log Not Found: /static/admin/js/prepopulate_init.js
+2023-08-17 01:35:04,369 WARNING log Not Found: /static/admin/js/change_form.js
+2023-08-17 01:35:04,369 WARNING basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 404 179
+2023-08-17 01:35:04,369 WARNING basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 404 179
+2023-08-17 01:35:11,197 INFO basehttp "POST /admin/auth/user/1/change/ HTTP/1.1" 302 0
+2023-08-17 01:35:11,217 INFO basehttp "GET /admin/auth/user/ HTTP/1.1" 200 19356
+2023-08-17 01:35:11,231 WARNING log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2023-08-17 01:35:11,232 WARNING log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2023-08-17 01:35:11,232 WARNING basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-08-17 01:35:11,233 WARNING basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-08-17 01:35:11,238 INFO basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+2023-08-17 01:35:11,242 WARNING log Not Found: /static/admin/img/search.svg
+2023-08-17 01:35:11,242 WARNING basehttp "GET /static/admin/img/search.svg HTTP/1.1" 404 179
+2023-08-17 01:35:11,246 WARNING log Not Found: /static/admin/img/icon-no.svg
+2023-08-17 01:35:11,247 WARNING basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 404 179
+2023-08-17 01:35:44,512 INFO autoreload C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\newspaperproject\settings.py changed, reloading.
+2023-08-17 01:35:45,332 INFO autoreload Watching for file changes with StatReloader
+2023-08-17 01:36:03,396 INFO autoreload C:\Users\User1\Documents\PWS\Модули D\Django\D2\newspaperproject\newspaperproject\settings.py changed, reloading.
